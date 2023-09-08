@@ -4,11 +4,3 @@
     COLOR: RED
     PUMPS: BLOOD
     LOVE: PURE
-  tasks:
-  - name: print love is pure
-    ansible.builtin.debug:
-      msg: "learn ansible"
-  - name: variables
-    ansible.builtin.debug:
-      msg: "hello color is {{COLOR}}, heart pumps {{PUMPS}}, my love is {{LOVE}}"
-
