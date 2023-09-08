@@ -1,0 +1,9 @@
+- name: passwords
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: enter username
+    private: false
+  - name: PASSWORD
+    prompt: enter password
+    private: true
