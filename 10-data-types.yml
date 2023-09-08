@@ -30,4 +30,4 @@
       msg: "{{NAME}}"
   - name: print MAP variables
     ansible.builtin.debug:
-      msg: "{{MARRIAGE}}"
+      msg: "{{Marriage}}"
