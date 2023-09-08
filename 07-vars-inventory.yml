@@ -1,6 +1,6 @@
 - name: variables inventory
   hosts: mongo
   tasks:
-   - name: print given value
-     ansible.builtin.debug:
-      msg: "print the value in mongo {{chimtu_name}}"
+  - name: print given value
+    ansible.builtin.debug:
+       msg: "print the value in mongo {{chimtu_name}}"
