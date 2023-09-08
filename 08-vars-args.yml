@@ -1,0 +1,6 @@
+- name: variables from command line
+  hosts: localhost
+  tasks:
+  - name: input the value from command line
+    ansible.builtin.debug:
+      msg: "check the name of the {{course}}"
