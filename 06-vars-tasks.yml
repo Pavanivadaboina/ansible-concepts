@@ -9,11 +9,11 @@
       msg: "you know jaya is {{jaya}} and pani is always {{pani}}"
   - name: print the values from play
     vars:
-      - jaya: bad
-        pani: cutie
-        suzu: good
+    - jaya: bad
+      pani: cutie
+      suzu: good
     ansible.builtin.debug:
-      msg: "you know jaya is {{jaya}} and pani is always {{pani}} suzu is {{suzu}}"
+       msg: "you know jaya is {{jaya}} and pani is always {{pani}} suzu is {{suzu}}"
 
 
 
