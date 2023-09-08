@@ -1,12 +1,12 @@
 #play-level
 - name: variables from files
   hosts: localhost
-  vars:
-    -variables.yml
+  vars_files:
+  - variables.yml
   tasks:
   - name: variables form files
-     ansible.builtin.debug
-  - msg: print files {{COURSE}}, {{DURATION}}, {{TRAINER}}
+    ansible.builtin.debug:
+      msg: "print files {{COURSE}}, {{DURATION}}, {{TRAINER}}"
 
 
 
