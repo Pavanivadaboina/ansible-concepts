@@ -1,0 +1,33 @@
+- name: ansible variable datatypes
+  hosts: localhost
+  vars:
+  - NAME: "Pavani"
+  - AGE: 23
+  - FIGURE: 32 30 30
+  - JOB: true
+  - FAMILY:
+     - KANNA
+     - MUMMY
+     - DADDY
+     - SISTER
+     - JAYA
+  - Marriage:
+      Year: 2025-2026
+      Job: TCS
+      Role: DevOps Engineer
+  tasks:
+  - name: print number variables
+    ansible.builtin.debug:
+      msg: "{{AGE}}"
+  - name: print BOOLEAN variables
+    ansible.builtin.debug:
+      msg: "{{JOB}}"
+  - name: print LIST variables
+    ansible.builtin.debug:
+      msg: "{{FAMILY}}"
+  - name: print STRING variables
+    ansible.builtin.debug:
+      msg: "{{NAME}}"
+  - name: print MAP variables
+    ansible.builtin.debug:
+      msg: "{{MARRIAGE}}"
