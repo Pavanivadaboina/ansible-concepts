@@ -15,9 +15,10 @@
 
 
   - name: create user roboshop
+    became: yes
     ansible.builtin.user:
       name: roboshop
     when: output.rc != 0
 
-  -
+
 
