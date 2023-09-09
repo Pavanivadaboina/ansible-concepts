@@ -1,5 +1,5 @@
 - name: variables inventory
-  hosts: mongo
+  hosts: node
   tasks:
   - name: print given value
     ansible.builtin.debug:

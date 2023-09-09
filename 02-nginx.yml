@@ -1,5 +1,5 @@
 - name: install nginx and run nginx
-  hosts: mongo
+  hosts: node
   become: yes
   tasks:
   - name: install nginx

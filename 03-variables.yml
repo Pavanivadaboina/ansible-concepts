@@ -1,5 +1,5 @@
 - name: variables in ansible
-  hosts: mongo
+  hosts: node
   vars:
     COLOR: RED
     PUMPS: BLOOD
