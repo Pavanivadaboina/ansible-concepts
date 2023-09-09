@@ -5,6 +5,6 @@
   tasks:
   - name: check condtions now
     ansible.builtin.debug:
-      msg: "print my {{JOB}}"
+      msg: "print my job {{JOB}}"
     when: JOB == "DevOPS Engineer"
 
