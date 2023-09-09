@@ -7,3 +7,4 @@
     ansible.builtin.debug:
       msg: "print my {{JOB}}"
     when: JOB == "DevOPS Engineer"
+
