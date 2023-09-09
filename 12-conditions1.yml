@@ -1,0 +1,9 @@
+- name: checking condtions
+  hosts: localhost
+  vars:
+    JOB: DevOPS Engineer
+  tasks:
+  - name: check condtions now
+    ansible.builtin.debug:
+      msg: "print my {{JOB}}"
+    when: JOB == "DevOPS Engineer"
